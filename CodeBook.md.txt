@@ -1,0 +1,33 @@
+Dataset Overview
+This dataset contains accelerometer and gyroscope data collected from 30 subjects performing six activities using a Samsung Galaxy S smartphone. The goal is to clean and summarize the data by calculating the mean and standard deviation of the measurements for each subject and activity.
+
+Variables
+>>>>Subject: Identifier for each subject (1–30).
+
+>>>>Activity: The activity being performed (e.g., WALKING, SITTING).
+
+>>>>Sensor Measurements: 561 features representing mean and standard deviation of accelerometer and gyroscope data (e.g.,      tBodyAcc-mean-X, tBodyGyro-std-Y).
+
+Key Features:
+	>tBodyAcc: Body acceleration (mean and std).
+
+	>tGravityAcc: Gravity acceleration (mean and std).
+
+	>tBodyGyro: Body angular velocity (mean and std).
+
+	>fBodyAcc: Fourier transformed body acceleration (mean and std).
+
+	>fBodyGyro: Fourier transformed body angular velocity (mean and std).
+
+Data Transformations
+	>Merged the training and test datasets.
+
+	>Filtered features to include only mean and standard deviation measurements.
+
+	>Replaced activity IDs with descriptive activity names.
+
+	>Calculated the average for each variable by subject and activity to create the final tidy dataset.
+Units
+	>Acceleration: meters per second squared (m/s²)
+
+	>Angular Velocity: radians per second (rad/s)
